@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261009112858
+Username: <PC-NAME>\<USER>
+RunAs User: <PC-NAME>\<USER>
+Configuration Name: 
+Machine: <PC-NAME> (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\<USER>\Desktop\Analisa Laptop\1-hapus-radmin-bersih.ps1
+Process ID: 7068
+PSVersion: 5.1.19041.7181
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7181
+BuildVersion: 10.0.19041.7181
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+== 1. Backup identitas Radmin ==
+OK  -> C:\Users\<USER>\Desktop\Analisa Laptop\backup-radmin\RadminVPN-HKLM.reg  (RID=<RID>, Alias=<ALIAS>)
+
+== 2. Hentikan aplikasi dan service Radmin ==
+OK
+
+== 3. Uninstall Radmin VPN 2.1 (MSI) ==
+msiexec exit code: 0  (0 / 3010 = sukses, 1605 = sudah tidak terpasang)
+
+== 4. Hapus adapter jaringan Radmin yang tersisa ==
+
+== 5. Hapus paket driver Famatech dari Driver Store ==
+delete-driver oem31.inf (C:\Windows\System32\DriverStore\FileRepository\netmp60.inf_amd64_f32b93923791d26a\netmp60.inf)
+Microsoft PnP Utility
+
+Driver package uninstalled.
+Driver package deleted successfully.
+
+== 6. Hapus service yang tersisa ==
+[SC] DeleteService SUCCESS
+
+== 7. Hapus firewall rule Radmin ==
+
+== 8. Hapus folder program dan log ==
+hapus: C:\ProgramData\Famatech\Radmin VPN
+hapus: C:\Users\<USER>\AppData\Local\Famatech\Radmin VPN
+
+== 9. Reset status auto-update (identitas tetap disimpan) ==
+Identitas masih ada di registry, subkey update dihapus.
+
+== HASIL PEMERIKSAAN ==
+BERSIH: tidak ada sisa Radmin.
+
+Silakan RESTART laptop, lalu jalankan 2-pasang-radmin-2.0.ps1
+**********************
+Windows PowerShell transcript end
+End time: 20261009113050
+**********************

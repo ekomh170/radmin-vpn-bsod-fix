@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261009113110
+Username: <PC-NAME>\<USER>
+RunAs User: <PC-NAME>\<USER>
+Configuration Name: 
+Machine: <PC-NAME> (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\<USER>\Desktop\Analisa Laptop\2-pasang-radmin-2.0.ps1
+Process ID: 18492
+PSVersion: 5.1.19041.7181
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7181
+BuildVersion: 10.0.19041.7181
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+== 1. Pastikan sisa driver lama sudah hilang ==
+RvNetMP60.sys lama: sudah hilang
+
+== 2. Blokir auto-update Radmin lewat file hosts ==
+OK: radmin-vpn.com diblokir (koneksi VPN pakai radminte.com, tidak terpengaruh).
+
+== 3. Kembalikan identitas sebelum install ==
+Identitas masih ada.
+
+== 4. Verifikasi installer ==
+OK: ditandatangani Famatech Corp., hash cocok.
+
+== 5. Install Radmin VPN 2.0.4899.9 ==
+Installer exit code: 0
+
+== 6. Cek identitas setelah install ==
+
+== HASIL ==
+Versi aplikasi : 2.0.4899.9
+Versi driver   : 1.1.3529.0
+Service        : Running
+Alias / RID    : <ALIAS> / <RID>  (lama: <RID>)
+
+SELESAI: Radmin VPN 2.0 terpasang dengan identitas lama.
+**********************
+Windows PowerShell transcript end
+End time: 20261009113207
+**********************

@@ -1,0 +1,17 @@
+# Backup identitas Radmin (RID, alias, network) - RAHASIA
+backup-radmin/
+identitas.txt
+*.reg
+
+# Crash dump berisi isi memori
+*.dmp
+
+# Installer pihak ketiga, unduh dari situs resmi
+installer-radmin-2.0/*
+!installer-radmin-2.0/README.md
+*.exe
+*.msi
+
+# Log hasil eksekusi script (berisi username, nama PC, RID, alias)
+/log-*.txt
+*.log
